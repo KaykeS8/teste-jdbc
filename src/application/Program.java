@@ -14,10 +14,16 @@ public class Program {
         System.out.println("##### TESTE: FindById implementation ######");
         Seller seller = sellerDao.findById(1);
         System.out.println(seller);
+
         System.out.println(" ");
-        System.out.println("##### TESTE: FindByDepartmentimplementation ######");
+        System.out.println("##### TESTE: FindByDepartment implementation ######");
         Department dep = new Department(11, null);
         List<Seller> sellers = sellerDao.findByDepartment(dep);
         sellers.forEach(System.out::println);
+
+        System.out.println(" ");
+        System.out.println("##### TESTE: FindAll timplementation ######");
+        List<Seller> list = sellerDao.findAll();
+        list.forEach(System.out::println);
     }
 }
