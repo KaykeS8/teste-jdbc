@@ -4,12 +4,12 @@ import java.io.Serializable;
 import java.util.Objects;
 
 public class Department implements Serializable {
-    private int id;
+    private Integer id;
     private String name;
 
     public Department() {}
 
-    public Department(int id, String name) {
+    public Department(Integer id, String name) {
         this.id = id;
         this.name = name;
     }
