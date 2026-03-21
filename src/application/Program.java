@@ -39,5 +39,11 @@ public class Program {
         theBest.setBaseSalary(32000.0);
         sellerDao.update(theBest);
         System.out.println("Update okaye id = " + theBest.getId());
+
+
+        System.out.println(" ");
+        System.out.println("##### TESTE6: deleteById timplementation ######");
+        sellerDao.deleteById(20);
+        System.out.println("Delected with succesfully");
     }
 }
