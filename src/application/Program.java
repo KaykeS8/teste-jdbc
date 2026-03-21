@@ -32,5 +32,12 @@ public class Program {
         Department ti = new Department(5, null);
         sellerDao.insert(new Seller(null, "linus", "linus.torvald@gmail.com", new Date(), 50000.0, ti));
         System.out.println("Insertion okay id");
+
+        System.out.println(" ");
+        System.out.println("##### TESTE5: update timplementation ######");
+        Seller theBest = sellerDao.findById(7);
+        theBest.setBaseSalary(32000.0);
+        sellerDao.update(theBest);
+        System.out.println("Update okaye id = " + theBest.getId());
     }
 }
